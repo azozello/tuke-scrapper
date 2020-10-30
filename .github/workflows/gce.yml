@@ -57,11 +57,3 @@ jobs:
           gcloud compute instances update-container "$GCE_INSTANCE" \
             --zone "$GCE_INSTANCE_ZONE" \
             --container-image "gcr.io/$PROJECT_ID/$GCE_INSTANCE-image:$GITHUB_SHA"
-
-spec:
-  containers:
-    - name: tuke-scrapper
-image: 'gcr.io/cloud-marketplace/google/nginx1:1.12'
-stdin: false
-tty: false
-restartPolicy: Always

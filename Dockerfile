@@ -1,6 +1,9 @@
 FROM ubuntu:latest
 
-RUN echo "Hello world"
+RUN apt-get update
+
+# Install curl
+RUN apt-get install curl
 
 # Install node.js v14.x
 RUN cd ~

@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 
+ENV TZ=Europe/Kiev
+
 RUN apt-get update
 
 # Install curl

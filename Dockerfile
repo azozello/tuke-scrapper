@@ -15,6 +15,10 @@ RUN bash nodesource_setup.sh
 RUN apt-get -y install nodejs
 RUN node -v
 
+# Install nginx
+RUN apt-get -y install nginx
+RUN systemctl status nginx
+
 # Install application
 CMD cd ~
 CMD git clone https://github.com/azozello/tuke-scrapper.git

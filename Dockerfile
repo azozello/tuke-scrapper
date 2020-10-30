@@ -23,3 +23,5 @@ CMD cd tuke-scrapper
 # Test js
 CMD npm i
 CMD npm start
+
+EXPOSE 8080

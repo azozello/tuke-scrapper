@@ -21,7 +21,7 @@ on:
 
 env:
   PROJECT_ID: ${{ secrets.GCE_PROJECT }}
-  GCE_INSTANCE: tuke-scrapper  # TODO: update to instance name
+  GCE_INSTANCE: tuke-scrapper-image  # TODO: update to instance name
   GCE_INSTANCE_ZONE: europe-west4-a   # TODO: update to instance zone
 
 jobs:
